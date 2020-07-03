@@ -46,5 +46,7 @@ def turn(board)
   pos = input_to_index(user_choice)
   if move(board, pos, "X") == FALSE
     turn(board)
+  else
+    display_board(board)
   end
 end
