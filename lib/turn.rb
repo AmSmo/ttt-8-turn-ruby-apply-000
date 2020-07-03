@@ -47,7 +47,6 @@ def turn(board)
   if move(board, pos, "X")
      display_board(board)
   else
-   
     turn(board)
   end
 end
