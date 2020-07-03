@@ -21,7 +21,7 @@ def valid_move?(board, pos)
 end
 
 def position_taken?(board,move)
-  (board[move] == " " || board[move] == "" || board[move] == NIL)
+  (board[move] == " " || board[move] == "" || board[move] == nil)
 end
 
 def move(board, pos, char = "X")
