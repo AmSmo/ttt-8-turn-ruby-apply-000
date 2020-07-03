@@ -8,15 +8,15 @@ def display_board(board)
 end
 
 def input_to_index(user_input)
-  return user_input.to_i - 1
+  user_input.to_i - 1
   
 end
 
 def valid_move?(board, pos)
   if pos.between?(0,8)
-    return position_taken?(board, pos)
+    position_taken?(board, pos)
   else
-    return false
+    false
   end
 end
 
