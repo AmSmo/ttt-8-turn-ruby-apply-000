@@ -17,5 +17,8 @@ def valid_move?(board, pos)
   if move.between?(0,8)
     if position_taken?(move)
       
-  else  
+    end
+  else 
+  
+end
 end
