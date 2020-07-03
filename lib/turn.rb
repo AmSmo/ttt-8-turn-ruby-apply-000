@@ -31,3 +31,12 @@ def position_taken?(board,move)
     return TRUE
   end
 end
+
+def move(board, pos, char = "X")
+  if valid_move?(board,pos)
+    board[pos]=char
+  else
+    return FALSE
+  end
+    
+end
