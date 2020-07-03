@@ -16,9 +16,9 @@ def valid_move?(board, pos)
   move = input_to_index(pos)
   if move.between?(0,8)
     if position_taken?(board, move)
-      return FALSE
+      return true
     else 
-      return True
+      return false
     end
   else
     return false
