@@ -27,8 +27,6 @@ end
 def move(board, pos, char = "X")
   if valid_move?(board,pos)
     board[pos]=char
-  else
-    FALSE
   end
 end
 
