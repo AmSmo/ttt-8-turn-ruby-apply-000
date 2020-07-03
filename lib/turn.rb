@@ -26,7 +26,7 @@ end
 
 def position_taken?(board,move)
   if board[move] == " " || board[move] == "" || board[move] == NIL
-    return turn(board)
+    return FALSE
   else
     return TRUE
   end
@@ -36,7 +36,7 @@ def move(board, pos, char = "X")
   if valid_move?(board,pos)
     board[pos]=char
   else
-    return turn(board)
+    return FALSE
   end
 end
 
@@ -44,5 +44,6 @@ def turn(board)
   puts "Please enter 1-9:"
   user_choice = gets.strip
   move = input_to_index(user_choice)
-  valid_move?(board,move)
+  if valid_move?(board,move) == FALSE
+    turn(board)
 end
