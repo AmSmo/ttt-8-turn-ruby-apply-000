@@ -40,6 +40,7 @@ def move(board, pos, char = "X")
   end
 end
 
-# def turn
-#   puts "Please enter 1-9:"
-# end
+def turn(board)
+  puts "Please enter 1-9:"
+  move = gets.strip
+end
