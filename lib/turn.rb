@@ -14,14 +14,14 @@ end
 
 def valid_move?(board, pos)
   if pos.between?(0,8)
-    return !position_taken?(board, pos)
+    return position_taken?(board, pos)
   else
     return false
   end
 end
 
 def position_taken?(board,move)
-  return !(board[move] == " " || board[move] == "" || board[move] == NIL)
+  return (board[move] == " " || board[move] == "" || board[move] == NIL)
 end
 
 def move(board, pos, char = "X")
