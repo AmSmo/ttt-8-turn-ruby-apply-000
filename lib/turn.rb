@@ -16,13 +16,17 @@ def valid_move?(board, pos)
   move = input_to_index(pos)
   if move.between?(0,8)
     if position_taken?(board, move)
-      if board[move] == " " || board[move] == "" || board[move] == NIL
-        return False
-      else
-        return True
-      end
+      return FALSE
+    else 
+      return True
     end
-  else 
-    return FALSE
+  end
+end
+
+def position_taken?(board,move)
+  if board[move] == " " || board[move] == "" || board[move] == NIL
+    return False
+  else
+    return True
   end
 end
