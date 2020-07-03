@@ -26,8 +26,8 @@ end
 
 def position_taken?(board,move)
   if board[move] == " " || board[move] == "" || board[move] == NIL
-    return False
+    return FALSE
   else
-    return True
+    return TRUE
   end
 end
