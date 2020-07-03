@@ -11,3 +11,11 @@ def input_to_index(user_input)
   return user_input.to_i - 1
   
 end
+
+def valid_move?(board, pos)
+  move = input_to_index(pos)
+  if move.between?(0,8)
+    if position_taken?(move)
+      
+  else  
+end
