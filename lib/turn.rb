@@ -38,5 +38,4 @@ def move(board, pos, char = "X")
   else
     return FALSE
   end
-    
 end
