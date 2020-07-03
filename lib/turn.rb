@@ -15,12 +15,12 @@ end
 def valid_move?(board, pos)
   if pos.between?(0,8)
     if position_taken?(board, pos)
-      return turn(board)
+      return false
     else 
       return true
     end
   else
-    return turn(board)
+    return false
   end
 end
 
