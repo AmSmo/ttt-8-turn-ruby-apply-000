@@ -45,7 +45,7 @@ def turn(board)
   user_choice = gets.strip
   move = input_to_index(user_choice)
   if valid_move?(board,move)
-    move(board, pos)
+    break
   else
     turn(board)
     
