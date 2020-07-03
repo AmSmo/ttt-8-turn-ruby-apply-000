@@ -20,6 +20,8 @@ def valid_move?(board, pos)
     else 
       return True
     end
+  else
+    return false
   end
 end
 
